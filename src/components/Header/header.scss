@@ -1,0 +1,17 @@
+.header {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  .add-article {
+    color: #909090;
+    cursor: pointer;
+  }
+  &__search {
+    cursor: pointer;
+  }
+}

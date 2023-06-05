@@ -1,0 +1,14 @@
+.articles-container {
+  .article-list {
+    margin: 20px 15px 0 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .articles-filters {
+    height: fit-content;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+  }
+}
