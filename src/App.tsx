@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArticleList } from './components/ArticleList/ArticleList';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Article } from './components/Article/Article';
 import { AddArticleForm } from './components/AddArticleForm/AddArticleForm';
 import { Header } from './components/Header/Header';
@@ -15,7 +15,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Header />}>
-              <Route path="/articles" element={<ArticleList />} />
+              <Route index element={<Navigate to="/articles" />} />
+              <Route index path="/articles" element={<ArticleList />} />
               <Route path="/articles/:id" element={<Article />} />
               <Route path="/articles/add" element={<AddArticleForm />} />
               <Route path="/articles/edit/:id" element={<AddArticleForm />} />

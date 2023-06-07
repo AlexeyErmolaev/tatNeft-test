@@ -4,6 +4,7 @@
   background-color: #fff;
   .search-field {
     position: relative;
+    margin-bottom: 8px;
     input {
       width: 100%;
     }
@@ -12,5 +13,9 @@
       top: 3px;
       right: 5px;
     }
+  }
+  .search-by {
+    margin-right: 8px;
+    color: #909090;
   }
 }

@@ -33,10 +33,33 @@ textarea {
   &__spread_x {
     justify-content: space-between;
   }
+  &__x-center {
+    align-items: center;
+  }
+}
+
+.input-error {
+  color: red;
+  font-size: 11px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
 }
 
 .margin-right-min {
   margin-right: 8px;
+}
+
+label {
+  color: #909090;
+}
+
+.checkbox {
+  label {
+    cursor: pointer;
+  }
 }
 
 body {
