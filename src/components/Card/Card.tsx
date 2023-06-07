@@ -27,7 +27,7 @@ export const Card = ({article}: CardProps) => {
     <div className="theme">{article.theme}</div>
     <div className="description">{article.description.slice(0, 150)}</div>
     <div className="flex flex__spread_x">
-      <Button onClick={() => navigate(articleLink)} label='Читать полностью' />
+      <Button className="margin-right-min" onClick={() => navigate(articleLink)} label='Читать' />
       <div className="flex">
         <Button className='margin-right-min' onClick={() => navigate(`/articles/edit/${article.id}`)} label='Редактировать' />
         <Button className='delete-button' onClick={() => handleRemove(article.id)} label='Удалить' />
